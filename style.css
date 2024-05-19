@@ -140,6 +140,7 @@ html {
   display: flex;
   justify-content: end;
   align-items: center;
+  width: 80vw;
 }
 
 .beranda > div > img {
