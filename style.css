@@ -311,9 +311,16 @@ html {
 }
 
 .photo {
+  height: 60vh;
   margin: 10px;
   text-align: center;
   flex: 1;
+}
+
+.photo:nth-child(2), .photo:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .photo img {
@@ -332,9 +339,9 @@ html {
 footer {
   background-color: #e7e7e7;
   text-align: center;
-  padding: 1rem 0;
-  padding-bottom: 3rem;
   font-family: poppins;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 footer h2 {
   font-size: 2rem;
@@ -346,7 +353,6 @@ footer .ig {
 }
 footer .link-ig a {
   color: black;
-  padding: 2rem 1rem;
   font-weight: 600;
 }
 /* footer end */
@@ -392,6 +398,9 @@ footer .link-ig a {
     border-bottom: 1px solid #fff;
   }
   /* side bar end */
+  .photo{
+    height: 30vh;
+  }
 }
 
 /* handphone */
@@ -399,4 +408,5 @@ footer .link-ig a {
   html {
     font-size: 55%;
   }
+  
 }
