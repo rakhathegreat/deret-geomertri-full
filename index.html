@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Geometri</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- hamburger menu -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Kalkulator Punya -->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.js"></script>
+      <link rel="stylesheet" href="style/kalkulator.css">
+
+      <!-- barow -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+      <!-- lato -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+      <!--sweetalert2-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+          onload="renderMathInElement(document.body);"></script>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <!-- logo -->
+      <div class="logo-container">
+        <div class="logo logo-left">
+          <img src="foto/logo_unsil.png" alt="logo kiri" />
+        </div>
+        <div class="logo logo-right">
+          <img src="foto/logo_hmif.jpg" alt="logo kanan" />
+        </div>
+      </div>
+
+      <!-- navbar tulisan -->
+      <div class="navbar-nav">
+        <a href="#beranda">BERANDA</a>
+        <a href="#geometri">GEOMETRI</a>
+        <a href="#rumus">RUMUS</a>
+        <a href="#tutorial">TUTORIAL</a>
+        <a href="#container">KALKULATOR</a>
+        <a href="#about">TENTANG KAMI</a>
+      </div>
+
+      <!-- hamburger -->
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero start -->
+    <section class="hero" id="hero">
+      <main class="content">
+        <div class="eta">
+          <h1>Temukan Solusi Tepat untuk Pertanyaan Geometri Anda!</h1>
+        </div>
+        <a href="#container" class="cta">MULAI SEKARANG >></a>
+      </main>
+    </section>
+    <!-- Hero end -->
+
+    <!-- javascript toggle hamburger -->
+    <script src="script.js"></script>
+
+    <!-- beranda start -->
+    <section id="beranda" class="beranda">
+      <p>Apa itu kalkulator geometri?</p>
+      <div class="h2"><h2>KALKULATOR GEOMETRI</h2></div>
+      <div class="note">
+        <p>
+          Kalkulator geometri adalah alat yang dirancang berbentuk web untuk
+          membantu perhitungan matematis yang berkaitan dengan geometri.
+          Kalkulator ini dapat membantu dalam menemukan suku-suku berurutan
+          dalam suatu barisan geometri, menghitung jumlah suku-suku tertentu,
+          menemukan rasio (r), dan menemukan suku ke-n.
+        </p>
+      </div>
+      <div>
+        <img src="foto/Rectangle 20.png" alt="">
+      </div>
+    </section>
+    <!-- beranda end -->
+
+    <!-- geometri start -->
+    <section id="geometri" class="geometri">
+      <div class="barisan">
+        <p>
+          Barisan geometri atau barisan ukur adalah barisan yang hasil bagi
+          setiap suku dengan suku sebelumnya tetap. Hasil bagi tersebut disebut
+          dengan rasio (r).
+        </p>
+      </div>
+      <div class="gede">
+        <h2>BARISAN<br />GEOMETRI</h2>
+      </div>
+      <div class="gede2">
+        <h2>DERET<br />GEOMETRI</h2>
+      </div>
+      <div class="deret">
+        <p>
+          Deret geometri adalah jumlah dari suatu barisan geometri. <br />Jika
+          diketahui barisan,<br />
+          U1,U2,U3,U4,.....Un<br />
+          Maka deret geometrinya,<br />
+          Un=U1+U2+U2+U3+U4 +.....+Un
+        </p>
+      </div>
+    </section>
+    <!-- geometri end -->
+
+    <!-- rumus start -->
+    <section id="rumus" class="rumus">
+      <div class="h-badag">
+        <h2>RUMUS</h2>
+      </div>
+      <div id="container-container">
+        <div id="rumus-container">
+          <p id="number">01</p>
+          <div>
+            <p>
+              Menentukan nilai suku ke-n:
+            </p>
+            <span id="rumus3">Un = ar^n^-^1</span>
+          </div>
+        </div>
+        <div id="rumus-container">
+          <div>
+            <p>
+              Menentukan jumlah suatu barisan:
+            </p>
+            <p>
+              Untuk r > 1,
+            </p>
+            <span id="rumus4">Sn = \frac{a(r^n-1)}{r-1}</span>
+            <p>
+              Untuk r < 1,
+            </p>
+            <span id="rumus5">Sn = \frac{a(1-r^n)}{1-r}</span>
+          </div>
+          <p id="number">02</p>
+        </div>
+        <div id="rumus-container">
+          <p id="number">03</p>
+          <div>
+            <p>
+              Menentukan rasio:
+            </p>
+            <p>
+              Diketahui
+            </p>
+            <span id="rumus6">U_1,U_2,U_3,U_4,...,U_{n-1},U_n</span>
+            <p>
+              Maka,
+            </p>
+            <span id="rumus7">\frac{U_2}{U_1}=\frac{U_3}{U_2}=\frac{U_4}{U_3}=....=\frac{U_n}{U_{n-1}}=r</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Rumus end -->
+
+    <!-- Tutorial start -->
+    <section id="tutorial" class="tutorial">
+      <div class="all">
+        <div class="tanya">
+          <p>Bagaimana cara menggunakan kalkulator geometri ini?</p>
+        </div>
+        <h2>TUTORIAL</h2>
+        <p>
+          1. Masukan angka yang akan dihitung<br />
+          2. Pilih operasi apa yang akan dilakukan. Operasi yang tersedia yaitu
+          mencari rasio, suku ke-n, jumlah suku ke-n, serta tes konvergen atau
+          divergen<br />
+          3. Klik operasi yang akan dihitung, hingga terdapat hasilnya
+        </p>
+        <h3>CONTOH</h3>
+        <p>
+          Diketahui barisan geometri 1,3,9,27,.... Tentukan rasio, suku ke-8 dan
+          jumlah 8 suku pertamanya?<br />
+          Jawab:<br />
+          Masukkan semua nilai yang diketahui, sehingga hasilnya rasio adalah 3,
+          suku ke-8 adalah 2187 dan jumlah 8suku pertamanya adalah 3280
+        </p>
+      </div>
+    </section>
+    <!-- Tutorial end -->
+
+    <!-- Kalkulator start -->
+
+    <div id="container">
+      <div id="box">
+            <div>
+                <div>
+                    <span id="math-field"></span>
+                </div>
+                <div id="container-hasil-mobile">
+                    <h2>Hasil : </h2>
+                    <div id="hasil2">
+                    </div>
+                </div>
+                <div id="container-kalkulator">
+                    <div>
+                        <button onclick="kurungBuka()">(</button>
+                        <button onclick="kurungTutup()">)</button>
+                        <button onclick="seven()">7</button>
+                        <button onclick="eight()">8</button>
+                        <button onclick="nine()">9</button>
+                        <button onclick="slash()">/</button>
+                        <div onclick="berbatas()" style="cursor:pointer; background: #f5f5f5;"><img src="img/upper-bound-2.png" style="width: 18.527px; height: 34.446px;"></div>
+                        <button onclick="n()">n</button>
+                        <button onclick="four()">4</button>
+                        <button onclick="five()">5</button>
+                        <button onclick="six()">6</button>
+                        <div onclick="multiple()" style="cursor:pointer; background: #f5f5f5;"><img src="img/close-1.png" style="width: 11px; height: 11px;"></div>
+                        <div onclick="takHingga()" style="cursor:pointer; background: #f5f5f5;"><img src="img/tak-hingga.png" style="width: 18.527px; height: 34.446px;"></div>
+                        <div onclick="pembagian()" style="cursor:pointer; background: #f5f5f5;"><img src="img/div.png" style="width: 16.224px; height: 22.065px;"></div>
+                        <button onclick="one()">1</button>
+                        <button onclick="two()">2</button>
+                        <button onclick="three()">3</button>
+                        <div onclick="plus()" style="cursor:pointer; background: #f5f5f5;"><img src="img/plus.png" style="width: 13px; height: 13px;"></div>
+                        <div onclick="kosong()" style="cursor:pointer; background: #f5f5f5;"><img src="img/kosong.png" style="width: 18.527px; height: 34.446px;"></div>
+                        <div onclick="power()" style="cursor:pointer; background: #f5f5f5;"><img src="img/power.png" style="width: 21.832px; height: 20px; "></div>
+                        <button onclick="zero()">0</button>
+                        <button onclick="comma()">.</button>
+                        <div onclick="infinity()" style="cursor:pointer; background: #f5f5f5;"><img src="img/infinity.png" style="width: 17px; height: 17px;"></div>
+                        <div onclick="minus()" style="cursor:pointer; background: #f5f5f5;"><img src="img/minus.png" style="width: 13px; height: 13px;"></div>
+                        <button onclick="hapus()" style="background: #898989;">C</button>
+                        <div onclick="kiri()" style="cursor:pointer; background: #898989;"><img src="img/kiri.png" alt=""></div>
+                        <div onclick="kanan()" style="cursor:pointer; background: #898989;"><img src="img/kanan.png" alt=""></div>
+                        <div onclick="remove()" style="cursor:pointer; background: #898989;"><img src="img/delete-tebal.png" alt=""></div>
+                        <div onclick="popup()"><img src="img/paper-plane-tebal.png" alt=""></div>
+                        <div onclick="div()" style="cursor:pointer; background: #f5f5f5;"><img src="img/divide.png" style="width: 22px; height: 22px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="container-deskripsi">
+                <div>
+                    <h2># Tips.</h2>
+                    <p>
+                        1. Pastikan deret yang dimasukan adalah deret geometri
+                    </p>
+                    <p>
+                        2. Rumus suku ke-n dari deret geometri adalah <span id="rumus2">ar^(^n^−^1^)</span>, di mana a adalah suku pertama dan r adalah rasio.
+                    </p>
+                    <p>
+                        3. Pastikan rasio (r) antara setiap pasangan suku berturut-turut adalah konstan.
+                    </p>
+                </div>
+                <div>
+                    <h2>Hasil : </h2>
+                    <div id="hasil">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div id="container-hasil">
+      </div>
+    </div>
+
+    <!-- Kalkulator end -->
+
+    <!-- About start -->
+    <section id="about" class="about">
+      <h2>TENTANG KAMI</h2>
+      <h3>DOSEN PENGAMPU:</h3>
+      <h4>Euis Nur fitriani Dewi S.T.,M.Kom.</h4>
+
+      <!-- foto -->
+      <div class="gallery">
+        <div class="photo">
+          <img src="foto/novali.jpg" alt="Foto 1" />
+          <p>Novali Eriana Putri<br />237006020</p>
+        </div>
+        <div class="photo">
+          <img src="foto/sifah.png" alt="Foto 2" />
+          <p>Sifah Nur Rizkiyah<br />237006035</p>
+        </div>
+        <div class="photo">
+          <img src="foto/rizal.png" alt="Foto 3" />
+          <p>Rizal Reynaldi<br />237006047</p>
+        </div>
+        <div class="photo">
+          <img src="foto/rakha.png" alt="Foto 4" />
+          <p>Rakha Fadillah Anwar<br />237006062</p>
+        </div>
+        <div class="photo">
+          <img src="foto/rehan.png" alt="Foto 5" />
+          <p>Raihan Faisal Ramdani<br />237006065</p>
+        </div>
+      </div>
+    </section>
+    <!-- foto end -->
+    <!-- About end -->
+
+    <!-- footer start -->
+    <footer>
+      <h2>Contact us</h2>
+      <div class="ig">
+        <i data-feather="instagram"></i>
+      </div>
+      <h4>On Instagram</h4>
+      <div class="link-ig">
+        <a
+          href="https://www.instagram.com/novalieriana?igsh=MTMyanU5MDhoNW5iYQ=="
+          >@novalieriana</a
+        >
+        <a href="https://www.instagram.com/sifahnurrz?igsh=MTBwYTBsZ3Y4eG4wOA=="
+          >@sifanurrz</a
+        >
+        <a href="https://www.instagram.com/rizalreynaldii?igsh=cmcweG9pdjR1M2Iw"
+          >@rizalreynaldii</a
+        >
+        <a href="https://www.instagram.com/rakhathegreat?igsh=NXczOTRoaDA4bnE2"
+          >@rakhathegreat</a
+        >
+        <a href="https://www.instagram.com/ponyonye?igsh=MTlqaGw4bWxubzFrZg=="
+          >@ponyonye</a
+        >
+      </div>
+    </footer>
+    <!-- Footer end -->
+    <!-- hamburger menu -->
+    <script>
+      feather.replace();
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.js" integrity="sha384-IolEJdmwZJpJkyCvXBnmGt8wXcP3nvRjxBjPv7/PWW7oODJhZ+qiY1sDpwgjcKLT" crossorigin="anonymous"></script>
+    <!-- Include SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@latest/lib/browser/math.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+
+    <!-- Your JavaScript file -->
+    <script src="script/kalkulator.js"></script>
+    <script src="script/tombol.js"></script>
+    <script>
+    MathQuill.getInterface(2).StaticMath(document.getElementById('rumus2'))
+    MathQuill.getInterface(2).StaticMath(document.getElementById('rumus3'))
+    MathQuill.getInterface(2).StaticMath(document.getElementById('rumus4'))
+    MathQuill.getInterface(2).StaticMath(document.getElementById('rumus5'))
+    MathQuill.getInterface(2).StaticMath(document.getElementById('rumus6'))
+    MathQuill.getInterface(2).StaticMath(document.getElementById('rumus7'))
+    </script>
+  </body>
+</html>

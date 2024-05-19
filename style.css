@@ -1,0 +1,387 @@
+/* scrol */
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+/* navbar start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 7%;
+  background-color: rgba(249, 246, 238, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  font-family: poppins;
+}
+
+/* logo unsil start */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  height: 50px;
+}
+.logo img {
+  height: 100%;
+}
+.logo-left {
+  margin-right: 5px;
+}
+.logo-right {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+/* logo end */
+
+/* navbar tulisan */
+.navbar .navbar-nav a {
+  color: black;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 9px;
+  font-weight: 700;
+}
+.navbar .navbar-nav a:hover {
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  background-color: #f6c18f;
+  position: relative;
+  transition-delay: 0.2s;
+}
+/* humburger menu start */
+.navbar .navbar-extra a {
+  color: black;
+  margin: 0 0, 5rem;
+}
+
+#hamburger-menu {
+  display: none;
+}
+/* humburger menu end */
+/* navbar end */
+
+/* hero start */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #013c5a;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  font-family: poppins;
+}
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+  justify-content: end;
+}
+.hero .content h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+.hero .content .cta {
+  margin-top: 5rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #013c5a;
+  background-color: #fff;
+  border-radius: 8px;
+  font-weight: 700;
+}
+/* hero end */
+
+/* beranda start */
+.beranda {
+  min-height: 100vh;
+  padding: 20rem 15% 1.4rem;
+  background-color: #a2b399;
+  font-family: poppins;
+}
+.beranda p {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.beranda .h2 {
+  padding-left: 16%;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.beranda .note {
+  padding-left: 16%;
+  padding-right: 30%;
+}
+
+.beranda > div:nth-child(4) {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.beranda > div > img {
+  width: 17vw;
+  transform: rotate(15deg);
+}
+/* beranda end */
+
+/* geometri start */
+.geometri {
+  min-height: 100vh;
+  padding: 10rem 15% 1.4rem;
+  background-color: #f9f6ee;
+  font-family: poppins;
+}
+.geometri .barisan {
+  font-size: 1.4rem;
+  padding-right: 25%;
+  padding-left: 16%;
+  text-align: right;
+  font-weight: 600;
+}
+.geometri .gede {
+  display: flex;
+  justify-content: end;
+  font-size: 2rem;
+}
+.geometri .gede2 {
+  font-size: 2rem;
+  padding-left: 20%;
+}
+.geometri .deret {
+  display: flex;
+  padding-left: 50%;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+/* geometri end */
+
+/* rumus start */
+.rumus {
+  min-height: 100vh;
+  padding: 8rem 15% 1.4rem;
+  background-color: #f6c18f;
+}
+.rumus .h-badag {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  font-family: poppins;
+  font-size: 2rem;
+}
+
+#container-container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#rumus-container {
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+#rumus-container:nth-child(1) {
+  margin-top: 0;
+}
+
+#rumus-container {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+#rumus-container:nth-child(2) {
+  justify-content: end;
+}
+
+#rumus-container:nth-child(2) > div {
+  text-align: end;
+  margin-right: 3rem;
+}
+
+#number {
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 100px;
+  padding: 2vw;
+  background: #013C5A;
+  color: white;
+  margin-right: 3rem;
+}
+/* rumus end */
+
+/* tutorial start */
+.tutorial {
+  min-height: 100vh;
+  padding: 8rem 15% 1.4rem;
+  background-color: #f9f6ee;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-family: poppins;
+}
+.tutorial .tanya {
+  color: #013c5a;
+}
+.tutorial p {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.tutorial h2 {
+  font-size: 2rem;
+}
+.tutorial h3 {
+  font-size: 1.6rem;
+}
+/* tutorial end */
+
+/* about start */
+.about {
+  min-height: 100vh;
+  background-color: #013c5a;
+  padding: 8rem 8% 1.4rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: poppins;
+}
+.about h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+.about h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+.about h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+  border-bottom: 4px solid #f6c18f;
+  font-weight: 500;
+}
+
+.gallery {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+}
+
+.photo {
+  margin: 10px;
+  text-align: center;
+  flex: 1;
+}
+
+.photo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo p {
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
+/* about end */
+
+/* footer start */
+footer {
+  background-color: #e7e7e7;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  font-family: poppins;
+}
+footer h2 {
+  font-size: 2rem;
+}
+footer .ig {
+  padding-top: 5px;
+  max-height: 100%;
+  width: auto;
+}
+footer .link-ig a {
+  color: black;
+  padding: 2rem 1rem;
+  font-weight: 600;
+}
+/* footer end */
+
+/* media queries */
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  /* humburger menu */
+  #hamburger-menu {
+    display: inline-block;
+  }
+  /* side bar start */
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #5a6953;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: #fff;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    border-bottom: 1px solid #fff;
+  }
+  /* side bar end */
+}
+
+/* handphone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}

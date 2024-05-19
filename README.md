@@ -1,0 +1,1 @@
+# deret-geomertri-full
