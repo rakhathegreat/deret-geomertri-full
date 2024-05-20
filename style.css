@@ -3,6 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 * {
+  font-family:  poppins;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,7 +24,6 @@ html {
   left: 0;
   right: 0;
   z-index: 9999;
-  font-family: poppins;
 }
 
 /* logo unsil start */
@@ -40,6 +40,7 @@ html {
 
 .logo-left {
   margin-right: 5px;
+  height: 68px;
 }
 .logo-right {
   margin-left: 5px;
@@ -49,7 +50,7 @@ html {
 }
 
 .logo-right > img {
-  height: 40px;
+  height: 55px;
 }
 /* logo end */
 
@@ -57,7 +58,7 @@ html {
 .navbar .navbar-nav a {
   color: black;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 15px;
   margin: 0 9px;
   font-weight: 700;
 }
@@ -85,23 +86,22 @@ html {
 .hero {
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  background-color: #013c5a;
+  background-image: url("foto/robotbg.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
-  text-align: center;
-  font-family: poppins;
 }
 .hero .content {
   padding: 1.4rem 7%;
   max-width: 60rem;
-  justify-content: end;
 }
 .hero .content h1 {
   font-size: 3rem;
   color: #fff;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 05);
 }
 .hero .content .cta {
   margin-top: 5rem;
@@ -120,16 +120,15 @@ html {
   min-height: 100vh;
   padding: 20rem 15% 1.4rem;
   background-color: #a2b399;
-  font-family: poppins;
 }
 .beranda p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 .beranda .h2 {
   padding-left: 16%;
   font-size: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .beranda .note {
   padding-left: 16%;
@@ -140,61 +139,70 @@ html {
   display: flex;
   justify-content: end;
   align-items: center;
-  width: 85vw;
+  width: 75vw;
 }
 
 .beranda > div > img {
   width: 25rem;
-  transform: rotate(15deg);
+  position: relative;
+  bottom: 85px;
 }
 /* beranda end */
 
 /* geometri start */
 .geometri {
   min-height: 100vh;
-  padding: 10rem 15% 1.4rem;
+  padding: 15rem 10% 1.4rem;
   background-color: #f9f6ee;
-  font-family: poppins;
 }
 .geometri .barisan {
+  display: flex;
   font-size: 1.4rem;
-  padding-right: 25%;
+  padding-right: 10%;
   padding-left: 16%;
   text-align: right;
   font-weight: 600;
 }
 .geometri .gede {
   display: flex;
+  text-align: start;
+  padding-left: 2rem;
   justify-content: end;
   font-size: 2rem;
 }
+.geometri .barisan .gede span {
+  font-weight: 500;
+}
 .geometri .gede2 {
+  padding-top: 3rem;
+  display: flex;
   font-size: 2rem;
-  padding-left: 20%;
+  padding-left: 10%;
 }
 .geometri .deret {
   display: flex;
-  padding-left: 50%;
+  padding-left: 2rem;
   font-weight: 600;
   font-size: 1.4rem;
+}
+.geometri .gede2 span {
+  font-weight: 500;
 }
 /* geometri end */
 
 /* rumus start */
 .rumus {
   min-height: 100vh;
-  padding: 8rem 15% 1.4rem;
+  padding: 6rem 15% 1.4rem;
   background-color: #f6c18f;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 .rumus .h-badag {
   display: flex;
   justify-content: center;
   text-decoration: underline;
-  font-family: poppins;
   font-size: 2rem;
 }
 
@@ -202,7 +210,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 #rumus-container {
@@ -220,7 +228,7 @@ html {
 #rumus-container {
   display: flex;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 #rumus-container:nth-child(2) {
@@ -237,7 +245,7 @@ html {
   font-weight: 700;
   border-radius: 100px;
   padding: 2vw;
-  background: #013C5A;
+  background: #013c5a;
   color: white;
   margin-right: 3rem;
 }
@@ -250,12 +258,10 @@ html {
 /* tutorial start */
 .tutorial {
   min-height: 100vh;
-  padding: 8rem 15% 1.4rem;
+  padding: 18rem 15% 1.4rem;
   background-color: #f9f6ee;
   display: flex;
   text-align: center;
-  align-items: center;
-  font-family: poppins;
 }
 .tutorial .tanya {
   color: #013c5a;
@@ -282,7 +288,6 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: poppins;
 }
 .about h2 {
   display: flex;
@@ -317,14 +322,15 @@ html {
   flex: 1;
 }
 
-.photo:nth-child(2), .photo:nth-child(4) {
+.photo:nth-child(2),
+.photo:nth-child(4) {
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
 
 .photo img {
-  max-width: 100%;
+  max-width: 85%;
   height: auto;
   display: block;
 }
@@ -332,6 +338,7 @@ html {
 .photo p {
   margin-top: 10px;
   font-size: 1.4rem;
+  padding-right: 25px;
 }
 /* about end */
 
@@ -339,7 +346,6 @@ html {
 footer {
   background-color: #e7e7e7;
   text-align: center;
-  font-family: poppins;
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
@@ -354,6 +360,7 @@ footer .ig {
 footer .link-ig a {
   color: black;
   font-weight: 600;
+  padding: 1rem;
 }
 /* footer end */
 
@@ -398,7 +405,7 @@ footer .link-ig a {
     border-bottom: 1px solid #fff;
   }
   /* side bar end */
-  .photo{
+  .photo {
     height: 25vh;
   }
 }
@@ -408,5 +415,4 @@ footer .link-ig a {
   html {
     font-size: 55%;
   }
-  
 }
